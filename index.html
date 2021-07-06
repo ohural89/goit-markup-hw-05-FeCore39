@@ -49,7 +49,7 @@
                 <section class="hero-section">
                     <div class="hero-wrap">
                         <h1 class="hero-title">Effective decisions for your business</h1>
-                        <button type="button" class="btn hero-btn-style">Service order</button>
+                        <button type="button" class="btn hero-btn-style" data-modal-open>Service order</button>
                     </div>
                 </section>
             
@@ -377,6 +377,17 @@
                 </section>
             </div>
         </footer>
+
+        <!-- MODAL WINDOW -->
+            <div class="modal-window-overlay is-hidden" data-modal>
+                <div class="modal-window">
+                    <button type="button" class="btn close-button" data-modal-close>
+                        <svg class="close-button-black-cross">
+                            <use href="./sprite/sprite.svg#close-button-black-cross"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         
         <script src="./scripts/modal.js"></script>
     </body>
