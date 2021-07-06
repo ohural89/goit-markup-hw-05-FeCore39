@@ -84,9 +84,6 @@ p {
     padding-bottom: 47px;
 }
 
-.footer-section {
-    padding: 60px 0;
-}
 
 .header-position {
     display: flex;
@@ -302,7 +299,6 @@ p {
 .hero-btn-style:hover,
 .hero-btn-style:focus {
     background-color: var(--hero-btn-hover);
-    outline: none;
 }
 /* END HERO */
 
@@ -423,7 +419,7 @@ p {
 }
 
 .social-icons-box:hover .social-icons,
-.social-icons-box:hover .social-icons {
+.social-icons-box:focus .social-icons {
     fill: var(--norm-accent-color);
 }
 
@@ -480,6 +476,7 @@ p {
 /* FOOTER */
 .footer-flex {
     display: flex;
+    align-items: baseline;
 }
 /* FOOTER ADDRESS */
 .footer-logo {
@@ -575,6 +572,10 @@ p {
 .filter-btn-style:focus {
     background: var(--spec-accent-color);
     color: var(--norm-accent-color);
+        box-shadow:
+        0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portf-box {
