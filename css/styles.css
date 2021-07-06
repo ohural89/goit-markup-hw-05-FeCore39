@@ -49,12 +49,20 @@ p {
 .link {
     text-decoration: none;
     display: block;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn {
     cursor: pointer;
     border: none;
     padding: 0;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* END RESET STYLES */
 
@@ -93,11 +101,15 @@ p {
     padding: 25px 0;
     margin-right: 93px;
     align-items: center;
+
+
 }
 
 .nav-list,
 .nav-contacts {
     display: flex;
+
+
 }
 
 .nav-contacts .header-contacts {
@@ -185,6 +197,10 @@ p {
     line-height: 1.19;
     /* line-height: 31px; */
     color: var(--logo-base-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-accent {
@@ -390,6 +406,10 @@ p {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-box:hover,
@@ -432,6 +452,10 @@ p {
     border-radius: 4px;
     width: 170px;
     height: 92px;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-clients-icon {
@@ -512,7 +536,11 @@ p {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255, 10%);  
+    background-color: rgb(255, 255, 255, 10%);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
