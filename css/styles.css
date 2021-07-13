@@ -101,15 +101,11 @@ p {
     padding: 25px 0;
     margin-right: 93px;
     align-items: center;
-
-
 }
 
 .nav-list,
 .nav-contacts {
     display: flex;
-
-
 }
 
 .nav-contacts .header-contacts {
@@ -166,7 +162,8 @@ p {
 
 /* HOVER FOCUS CURRENT */
 .nav-link .current {
-    color: var(--spec-accent-color);  
+    color: var(--spec-accent-color);
+    position: relative;  
 }
 
 .link:hover,
@@ -221,6 +218,7 @@ p {
 
 .nav-text,
 .header-contacts {
+    position: relative;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -230,6 +228,17 @@ p {
 }
 .nav-text {
     color: var(--titles-color);
+}
+
+.active-line::after {
+    display: block;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-color: var(--spec-accent-color);
+    border-radius: 2px;
+    bottom: -2px;
 }
 
 .contact-item {
@@ -687,6 +696,8 @@ p {
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    
+    animation-duration: 3000ms;
 }
 
 .close-button {
