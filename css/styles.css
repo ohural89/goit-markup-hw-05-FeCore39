@@ -508,6 +508,7 @@ p {
 
 .footer-bg-color {
     background-color: var(--footer-bg);
+    padding: 60px 0;
 }
 
 .footer-address,
@@ -531,9 +532,6 @@ p {
 
 /* FOOTER JOIN IN! */
 .footer-social-links {
-    width: 206px;
-    height: 80px;
-    margin-top: 72px;
     margin-left: 70px;
 }
 
