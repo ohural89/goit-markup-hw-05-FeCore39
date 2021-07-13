@@ -87,7 +87,6 @@ p {
     padding-bottom: 47px;
 }
 
-
 .header-position {
     display: flex;
     justify-content: space-between;
@@ -155,8 +154,6 @@ p {
 .filters-btn:not(:last-child) {
     margin-right: 8px;
 }
-
-
 /* END POSITIONING */
 
 /* COMPONENTS */
@@ -709,8 +706,11 @@ p {
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    
-    animation-duration: 3000ms;
+}
+
+.animate__bounceIn {
+    animation-iteration-count: 1;
+    animation-duration: 1500ms;
 }
 
 .close-button {
