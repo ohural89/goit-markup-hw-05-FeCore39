@@ -53,20 +53,12 @@ p {
 .link {
     text-decoration: none;
     display: block;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn {
     cursor: pointer;
     border: none;
     padding: 0;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* END RESET STYLES */
 
@@ -226,6 +218,10 @@ p {
 }
 .nav-text {
     color: var(--titles-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active-line::after {
@@ -246,11 +242,19 @@ p {
 
 .header-contacts {
     color: inherit;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-icons {
     fill: var(--text-color);
     margin-right: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts:hover .contacts-icons,
@@ -304,6 +308,10 @@ p {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: var(--spec-accent-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn-style:hover,
@@ -445,15 +453,17 @@ p {
 }
 
 .social-icons {
-    fill: var(--icon-main-fill);    
+    fill: var(--icon-main-fill);
+    
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-box:hover .social-icons,
 .social-icons-box:focus .social-icons {
     fill: var(--norm-accent-color);
 }
-
-
 /* END OUR TEAM */
 
 /* REGULAR CLIENTS */
@@ -594,6 +604,10 @@ p {
     background: var(--spec-bg-color);
     border-radius: 4px;
     padding: 6px 22px;
+
+    transition-property: background, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn-style:hover,
@@ -608,6 +622,10 @@ p {
 
 .portf-box {
     background: var(--norm-accent-color);
+    
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portf-box:hover,
@@ -616,10 +634,6 @@ p {
         0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
-
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portf-box-animation {
